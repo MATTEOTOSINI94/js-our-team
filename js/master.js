@@ -63,11 +63,12 @@ btnForm.addEventListener("click", function () {
     //    creazione oggetto con i dati presi da input
     //    creare la card nella mia interfaccia
     //   inserire il nuovo oggetto nel mio array
+    // l'immagine deve apparire in base
 
 
     const nameUser = document.getElementById("name").value
     const ruoloUser = document.getElementById("role").value
-    const imgUser = document.getElementById("image")
+    const imgUser = document.getElementById("image").value
     console.log(nameUser)
     const cardUser = {
 
@@ -77,21 +78,25 @@ btnForm.addEventListener("click", function () {
     }
     console.log(cardUser)
 
-     const cardboh =  `<div class="team-card">
-     <div class="card-image">
-         <img
-             src="img/wayne-barnett-founder-ceo.jpg"
-             alt="Wayne Barnett"
-         />
-         </div>
-         <div class="card-text">
-         <h3>${cardUser.name}</h3>
-         <p>${cardUser.ruolo}</p>
-         </div>
-      </div>
-     </div>`
+     
+    const cardboh =  `<div class="team-card">
+    <div class="card-image">
+        <img
+            src="${cardUser.pic}.jpg"
+            alt="Wayne Barnett"
+        />
+        </div>
+        <div class="card-text">
+        <h3>${cardUser.name}</h3>
+        <p>${cardUser.ruolo}</p>
+        </div>
+     </div>
+    </div>`
+
+    
 
      cardContainer.innerHTML += cardboh
+     
 
 })
 
@@ -99,5 +104,5 @@ btnForm.addEventListener("click", function () {
 
 
 function genraImg() {
-
+   
 }

@@ -79,10 +79,10 @@ btnForm.addEventListener("click", function () {
     console.log(cardUser)
 
      
-    const cardboh =  `<div class="team-card">
+    const cardbtn =  `<div class="team-card">
     <div class="card-image">
         <img
-            src="${cardUser.pic}.jpg"
+            src="img/${cardUser.pic}.jpg"
             alt="Wayne Barnett"
         />
         </div>
@@ -95,7 +95,7 @@ btnForm.addEventListener("click", function () {
 
     
 
-     cardContainer.innerHTML += cardboh
+     cardContainer.innerHTML += cardbtn
      
 
 })
